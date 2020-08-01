@@ -1,0 +1,438 @@
+<html lang="en" dir="ltr"><head>
+<meta charset="utf-8">
+<title>mkgll</title>
+<meta name="description" content="Derek Sivers: Writer, entrepreneur, avid student of life. I make useful things, and share what I learn.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="alternate" type="application/atom+xml" title="Derek Sivers" href="/en.atom">
+<link rel="alternate" type="application/rss+xml" title="Derek Sivers podcast" href="/podcast.rss">
+<meta property="og:title" content="Derek Sivers">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sivers.org/">
+<meta property="og:image" content="https://sivers.org/images/DerekSivers-20141209a-400.jpg">
+<meta property="og:description" content="Writer, entrepreneur, avid student of life. I make useful things, and share what I learn.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sivers">
+<meta name="twitter:creator" content="@sivers">
+<meta name="twitter:title" content="Derek Sivers">
+<meta name="twitter:description" content="Writer, entrepreneur, avid student of life. I make useful things, and share what I learn.">
+<meta name="twitter:image" content="https://sivers.org/images/DerekSivers-20141209a-400.jpg">
+<style>}
+body{
+	max-width:40em;
+	margin:0 auto;
+	padding:5px;
+	font-family:Georgia,serif;
+	font-size:20px;
+	line-height:30px;
+	background-color:#fff;
+	color:#000
+}
+h1,h2,h3,dt,small,.small,footer,label,cite,div.blogparent,input[type="submit"]{
+	font-family:valkyrie_c4;
+	font-weight:normal;
+	font-style:normal
+}
+span.url {
+	font-family:Georgia,serif;
+}
+small,.small,footer{
+	font-size:0.8em;
+	color:#666
+}
+h1,h2,h3,label{
+	line-height:1em
+}
+h1{
+	font-size:2em
+}
+h2 a{
+	color:#000;
+	text-decoration: underline
+}
+h2,h3{
+	margin-top:2em
+}
+h3{
+	font-size:1.5em
+}
+a{
+	text-decoration:none;
+	color:#20b;
+	overflow-wrap:break-word;
+	word-wrap:break-word
+}
+a:visited{
+	color:#606
+}
+a:hover{
+	text-decoration:underline
+}
+dt{
+	margin-top:2em;
+	font-size:1.2em
+}
+li,dd{
+	margin-bottom:1em
+}
+figure{
+	margin:0
+}
+blockquote{
+	margin:0
+}
+pre{
+	color:#fff;
+	background-color:#333;
+	padding:0.25em;
+	line-height:1
+}
+code{
+	font-size:0.8em
+}
+img,iframe,audio{
+	max-width:100%;
+	display:block
+}
+img{
+	height:auto
+}
+input[type="text"],input[type="password"],input[type="email"],select,textarea{
+	padding:0.5em 0.6em;
+	display:block;
+	border:1px solid #ccc;
+	box-shadow:inset 0 1px 3px #ddd;
+	border-radius:4px;
+	vertical-align:middle;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	max-width:99%
+}
+input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus,select:focus,textarea:focus{
+	outline:0;
+	border-color:#129FEA
+}
+input[type="submit"]{
+	padding:5px;
+	font-size:1em;
+	background:#000;
+	color:#fff;
+	font-weight:bold
+}
+form.inlineform input{
+	display:inline
+}
+select{
+	height:2.25em;
+	border:1px solid #ccc;
+	background-color:#fff
+}
+label{
+	margin:0.5em 0 0.2em
+}
+section{
+	margin-bottom:4em
+}
+section#masthead{
+	margin-bottom:1em
+}
+section#masthead h1{
+	margin:0
+}
+section#masthead h1 a{
+	color:#000
+}
+body#home div#content h2 small{
+	margin-left:2em
+}
+body#home div#content ul{
+	padding-left:0
+}
+body#home div#content ul li{
+	list-style-type:none
+}
+body#home div#content section#photos img{
+	display:inline
+}
+div.blogparent{
+	font-size:1.2em;
+	margin:1em 0 -0.5em 0
+}
+body#oneblog div#content article header h1{
+	margin-bottom:0
+}
+div#comments ol{
+	padding-left:2em
+}
+div#comments li{
+	margin-bottom:2em
+}
+div#comments li p{
+	overflow-wrap:break-word;
+	word-wrap:break-word
+}
+.response{
+	display:block;
+	margin-left:1em;
+	padding:4px;
+	background-color:#ffc;
+	border:1px solid #000;
+	font-family:sans-serif;
+	font-size:14px
+}
+body#onebook figure img,body#booklist figure img{
+	float:left;
+	margin-right:2em
+}
+body#booklist div.abook{
+	margin:0 0 8em 0
+}
+body#interview header h2 a {
+	color: #009;
+	text-decoration: underline
+}
+cite {
+	color: #666
+}
+div.presentation_summary{
+	margin-bottom:6em
+}
+@media screen and (max-width: 440px){
+	section#masthead h1{
+		font-size:2em
+	}
+	div.presentation_summary img{
+		display:block
+	}
+}
+@media screen and (min-width: 440px){
+	section#masthead h1{
+		font-size:3em
+	}
+	div.presentation_summary img{
+		float:right
+	}
+}
+@media(prefers-color-scheme:dark){
+	body{
+		background-color:#1f1f1f;
+		color: #ccc
+	}
+	a{
+		color:#dba521
+    text-decoration: underline;
+	}
+	a:visited{
+		color:#dba521
+    text-decoration: underline;
+	}
+	.response{
+		background-color:#444
+	}
+	h1,h1 a,h2,h2 a,h3,h3 a,section#masthead h1 a{
+		color:#fff
+	}
+}</style>
+</head>
+<body id="home">
+<section id="masthead">
+<h1><a href="/" title="Derek Sivers">mkgll</a></h1>
+</section>
+<div id="content">
+
+<section id="aboutme">
+<h2>
+	Me in 10 seconds
+</h2>
+<p>
+	I’ve been a <a href="/music">musician</a>, producer, <a href="http://professionalpests.com/">circus performer</a>, <a href="/a">entrepreneur</a>, <a href="/presentations">TED speaker</a>, and <a href="/we14">book publisher</a>.
+</p><p>
+        Monomaniac,
+	<a href="http://typelogic.com/intj.html">introvert</a>,
+	<a href="/slow">slow thinker</a>,
+	and love finding a <a href="/counter">different point of view</a>.
+</p><p>
+	California native, I now <a href="/local">live</a> in New Zealand.
+</p>
+<h2>
+	Me in 10 minutes?
+</h2>
+<p>
+	See <a href="/about">my “about” page</a>.
+</p>
+<h2>
+	What am I doing now?
+</h2>
+<p>
+	See <a href="/now">my “now” page</a>.
+</p>
+<h2>
+	Contact me?
+</h2>
+<p>
+	See <a href="/contact">why you should</a>, though read my <a href="/faq">frequently asked questions</a>, first.
+</p>
+</section>
+
+<style>
+#mybooks img { float: left; margin-bottom: 2em; margin-right: 0.5em }
+#mybooks h3 { margin-top: 0 }
+#mybooks br { clear: both }
+</style>
+<section id="mybooks">
+<h2>Books</h2>
+
+<a href="/a"><img src="/images/DerekSivers-cover-AnythingYouWant-150x185.png" alt="Anything You Want book cover"></a>
+<h3><a href="/a">Anything You Want</a> <span class="small">(2011)</span></h3>
+<p>40 lessons for a new kind of entrepreneur: my tales of starting, building, and selling CD Baby</p>
+
+<br>
+
+<a href="/m"><img src="/images/DerekSivers-cover-YourMusicAndPeople-150x185.png" alt="Your Music and People book cover"></a>
+<h3><a href="/m">Your Music and People</a> <span class="small">(2020)</span></h3>
+<p>getting your work to the world by being creative, considerate, resourceful, and connected</p>
+
+<br>
+
+<a href="/n"><img src="/images/DerekSivers-cover-HellYeahOrNo-150x185.png" alt="Hell Yeah or No book cover"></a>
+<h3><a href="/n">Hell Yeah or No</a> <span class="small">(2020)</span></h3>
+<p>thoughts around what’s worth doing, fixing faulty thinking, and getting things done</p>
+
+<br>
+
+<a href="/h"><img src="/images/DerekSivers-cover-HowToLive-150x185.png" alt="How to Live book cover"></a>
+<h3><a href="/h">How to Live</a> <span class="small">(2020?)</span></h3>
+<p>radically different approaches to life, in succinct directives</p>
+
+<br>
+</section>
+
+<section id="podcast">
+<h2>Podcast</h2>
+<p>
+<a href="/podcast">Listen here on my site</a>.
+</p><p>
+Subscribe at
+<a href="https://podcasts.apple.com/us/podcast/derek-sivers/id1485474470">Apple</a>,
+<a href="https://open.spotify.com/show/15cXdV9RBxSZxhyC7Cow6E">Spotify</a>,
+<a href="https://overcast.fm/itunes1485474470">Overcast</a>,
+<a href="https://www.youtube.com/playlist?list=PLcE0XVmYoKM8gcT6nHNHDiK0rSjm8X6eb">YouTube</a>,
+<a href="https://www.stitcher.com/podcast/derek-sivers">Stitcher</a>,
+<a href="https://www.iheart.com/podcast/867-derek-sivers-52276959/">iHeartRadio</a>,
+<a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9zaXZlcnMub3JnL3BvZGNhc3QucnNz">Google</a>, or
+<a href="/podcast.rss">copy the master RSS</a> to paste into your favorite player.
+</p>
+</section>
+
+<section id="newestarticles">
+<h2>Newest Articles <small><a href="/blog">see all</a></small></h2>
+<ul>
+	<li><a href="/learn-js">How to learn JavaScript</a></li>
+	<li><a href="/mny">Time is personal. Your year changes when your life changes.</a></li>
+	<li><a href="/eml">Experiments in music and life</a></li>
+	<li><a href="/nod">Writing daily, but posting when ready</a></li>
+	<li><a href="/richand">How I got rich on the other hand</a></li>
+	<li><a href="/pinit2">Podcast published today</a></li>
+</ul>
+</section>
+
+<section id="popularposts">
+<h2>Popular Articles <small><a href="/blog">see all</a></small></h2>
+<ul>
+	<li><a href="/ff">Leadership Lessons from Dancing Guy</a></li>
+	<li><a href="/local">You don’t have to be local</a></li>
+	<li><a href="/hellyeah">No yes. Either HELL YEAH or no.</a></li>
+	<li><a href="/multiply">Ideas are just a multiplier of execution</a></li>
+	<li><a href="/trust">Why I gave away my company to charity</a></li>
+	<li><a href="/pa">Parenting : Who is it really for?</a></li>
+</ul>
+</section>
+
+<section id="list">
+<h2>My private email list</h2>
+<p>
+For my quiet announcements, early access to new books, and more, get on my private email list, here: 
+</p>
+<form action="/list" method="post" class="inlineform">
+<label for="name">Your Name</label><br>
+<input type="text" name="name" id="name" value=""><br>
+<label for="email">Your Email</label><br>
+<input type="email" name="email" id="email" value="">
+<input type="hidden" name="listype" value="all">
+<input type="submit" name="submit" value="sign up">
+</form>
+</section>
+
+<section id="companies">
+<h2>Projects</h2>
+<dl>
+	<dt><a href="/book">Book Notes</a></dt>
+	<dd>detailed notes from the last 250+ books I’ve read</dd>
+	<dt><a href="https://nownownow.com/">Now Now Now</a></dt>
+	<dd>a collection of sites that have a “what I’m doing now” page</dd>
+	<dt><a href="https://musicthoughts.com/">MusicThoughts</a></dt>
+	<dd>inspiring quotes about music, translated into Español, Français, Deutsch, Italiano, Português, Русский, العربية, 日本語, and 中文</dd>
+</dl>
+</section>
+
+<section id="videos">
+<h2>Videos</h2>
+<dl>
+	<dt><a href="https://www.ted.com/speakers/derek_sivers">TED (ted.com)</a></dt>
+	<dd>3 short talks from the TED Conference.</dd>
+	<dt><a href="/anything">Anything You Want</a></dt>
+	<dd>7 short animations from my book “Anything You Want”.</dd>
+	<dt><a href="/wds">Uncommon Sense</a></dt>
+	<dd>Entrepreneur lessons learned from starting, building, and selling CD Baby.</dd>
+	<dt><a href="/presentations">Conference Presentations</a></dt>
+	<dd>Talks from other conferences, all subjects.</dd>
+</dl>
+</section>
+
+<section id="interviews">
+<h2>Interviews</h2>
+<p>You can listen to over <a href="/i">80 hours of interviews</a>, where I’m the guest.</p>
+<p>Each one has an MP3 you can download, or a transcript if you prefer to read.</p>
+</section>
+
+<section id="photos">
+<h2>Photos <small>(click for big)</small></h2>
+<a href="/images/DerekSivers-20141119-1450.jpg"><img src="/images/DerekSivers-20141119-100.jpg" alt="Derek Sivers" title="© 2014 Derek Sivers"></a>
+<a href="/images/DerekSivers-20141209a-1853.jpg"><img src="/images/DerekSivers-20141209a-100.jpg" alt="Derek Sivers" title="© 2014 Pat Shepherd - patshepherd.co.nz"></a>
+<a href="/images/DerekSivers-20141209b-2333.jpg"><img src="/images/DerekSivers-20141209b-100.jpg" alt="Derek Sivers" title="© 2014 Pat Shepherd - patshepherd.co.nz"></a>
+<a href="/images/DerekSivers-20141209c-1556.jpg"><img src="/images/DerekSivers-20141209c-100.jpg" alt="Derek Sivers" title="© 2014 Pat Shepherd - patshepherd.co.nz"></a>
+</section>
+
+<section id="tweets">
+<h2>Tweets <small><a href="/tweets">see all tweets</a></small></h2>
+<dl id="tweetlist">
+	<dt class="small">July 28</dt>
+	<dd>Fun interview with @shaneaparrish <a href="https://fs.blog/knowledge-project/derek-sivers/">https://fs.blog/knowledge-project/derek-sivers/</a> I've been a fan (and subscriber) of his for years, so it was an honor to finally talk.</dd>
+	<dt class="small">July 22</dt>
+	<dd>“HELL YEAH OR NO”, my newest book, is available now at <a href="https://sivers.org/n">https://sivers.org/n</a></dd>
+	<dt class="small">July 22</dt>
+	<dd>“YOUR MUSIC AND PEOPLE”, my new book, is available now at <a href="https://sivers.org/m">https://sivers.org/m</a></dd>
+	<dt class="small">July 4</dt>
+	<dd>Moved back to New Zealand for good, today.</dd>
+	<dt class="small">April 28</dt>
+	<dd>8 years ago I spent the day in Singapore with my hero Kevin Kelly, then at the end he told me it was his 60th birthday. Today he posted this must-read gem: <a href="https://kk.org/thetechnium/68-bits-of-unsolicited-advice/">https://kk.org/thetechnium/68-bits-of-unsolicited-advice/</a></dd>
+	<dt class="small">April 20</dt>
+	<dd>If you haven’t heard “Tango Til They’re Sore” by Tom Waits (from Rain Dogs) in a while, now’s a good time. <a href="https://www.youtube.com/watch?v=cmRzZX4dRSw">https://www.youtube.com/watch?v=cmRzZX4dRSw</a></dd>
+</dl>
+</section>
+
+<section id="search">
+<h2>Search</h2>
+<form action="https://duckduckgo.com/" method="get" class="inlineform">
+	<label for="q">Search sivers.org for anything:</label>
+	<input type="text" name="q" value="" required="">
+	<input type="hidden" name="sites" value="sivers.org">
+	<input type="hidden" name="ia" value="web">
+	<input type="submit" value="search">
+</form>
+</section>
+
+</div>
+
+
+</body></html>
